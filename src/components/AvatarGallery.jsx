@@ -80,6 +80,8 @@ export default function AvatarGallery({ currentAvatar }) {
       return;
     }
 
+    // Estructuramos el nuevo objeto avatar con sus respectivos metadatos.
+    // Incluye soporte para atributos PBR customizados para la persistencia local de visualizaciones 3D (Katerin Quenta).
     const newAvatar = {
       id: Date.now(),
       is3D: currentAvatar.is3D,
