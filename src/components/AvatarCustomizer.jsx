@@ -270,7 +270,8 @@ export default function AvatarCustomizer({ onAvatarChange, currentAvatar }) {
     return [r, g, b, 1.0];
   };
 
-  // Función para aplicar de manera dinámica los materiales PBR locales al cargarse el visualizador
+  // Inyección dinámica de materiales PBR (Physically Based Rendering) locales al cargarse el modelo.
+  // Permite interactuar con la iluminación física y reflexiones de Google Model Viewer (Cristian Nájera).
   const apply3dCustomizations = (mv) => {
     if (!mv || !mv.model) return;
     
